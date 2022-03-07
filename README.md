@@ -25,8 +25,9 @@ This repo is created for the purpose of creating a docker conatiner which includ
         - If you get an error message saying: "docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?." that likely means that you need to start the docker engine. This can be done using the command:  
         ```sudo dockerd```  
         - If you get an error similar to: "Got permission denied while trying to connect to the Docker daemon socket...", it is likely that your user needs to be added to the "docker" group. To check which groups your user belongs to you may use the groups command. To add your user to the docker group you may use:  
-        ```sudo usermod -aG docker <username>``` where <username> is your username. 
-        
+        ```sudo usermod -aG docker <username>```  
+        where \<username\> is your unix username. 
+
   - Windows:
     There are two options for running the docker on a windows system:
     1. Install the docker-desktop application.
